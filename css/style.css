@@ -11,19 +11,39 @@
 }
 
 .footer{
-    background-color: rgb(134, 181, 223);
+    background-color: rgb(205 177 231);
     margin: 0px auto;
     padding: 20px 0px 20px 0px ;
+    
 }
 
 .jumbotron{
     padding: 70px 30px 70px 30px;
-    margin: 0px auto;
+    margin:  0 auto;
     background-color: rgb(174, 126, 219);
     color: white;
+    border-radius: 0;
 }
 
 .address{
     font-size: 80%;
     margin: 0px;
+}
+
+body{
+    padding-top: 56px;
+}
+
+.navbar a:hover{
+    background-color: cornsilk;
+    color: black ;
+    z-index: 0;
+}
+
+.navbar-dark{
+    background-color: #512DA8;
+}
+
+.navbar-brand{
+    padding: 0 10px;
 }
