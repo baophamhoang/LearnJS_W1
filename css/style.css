@@ -50,3 +50,7 @@ body{
 .navbar-brand{
     padding: 0 10px;
 }
+
+#check-label:hover{
+    font-weight: 500;
+}
