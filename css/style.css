@@ -55,3 +55,7 @@ body{
     font-weight: 500;
 }
 
+.check-box{
+    margin-right: 5px;
+    display: inline-block;
+}
