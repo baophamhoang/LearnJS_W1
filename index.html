@@ -27,11 +27,22 @@
                     <li class="nav-item"> <a class="nav-link" href="#">Menu <span class="fa fa-list fa-lg"></span></a></li>
                     <li class="nav-item"> <a class="nav-link" href="./contactus.html">Contact <span class="fa fa-address-card fa-lg"></span></a></li>
                 </ul>
+                <span class="navbar-text">
+                    <a data-toggle="modal" data-target="#loginModal">
+                        <span class="fa fa-sign-in"></span> Login
+                    </a>
+                </span>
             </div>
-            </div>
+            
+        </div>
+
     </nav>
+    
     <header class="jumbotron">
         <div class="container">
+            <div class="row">
+                
+            </div>
             <div class="row row-header align-items-center">
                 <div class="col-12 col-sm-6">
                     <h1>Ristorante con Fusion</h1>
@@ -43,7 +54,8 @@
                             <img src="./img/logo.png" class="img-fluid " alt="">
                         </div>
                         <div class="col-sm-3">
-                            <a href="#reserve" class="btn btn-sm btn-warning col-12">Reserve Table</a>
+                            <a href="#reserve" class="btn btn-sm btn-warning nav-link" data-toggle="tooltip" data-html="true" 
+                            data-placement="bottom" title="Call us at <br><strong>0905857882</strong>">Reserve Table</a>
                         </div>
                     <!-- </div> -->
                 <!-- </div> -->
@@ -52,6 +64,7 @@
     </header>
 
     <div class="container ">
+        
         <div class="row row-content align-items-center">
             <div class="col-12 col-sm-4 col-md-3 order-sm-last">
                 <h3>Our Lipsmacking Culinary Creations</h3>
@@ -202,6 +215,48 @@
     <script src="/node_modules/jquery/dist/jquery.slim.js"></script>
     <script src="/node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('[data-toggle="tooltip"]').tooltip();
+        })
+    </script>
+     <div id="loginModal" class="modal fade " role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <!-- model content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Login</h4>
+                    <button type="button" class="close" data-dismiss="modal" >&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="form-row">
+                            <div class="form-group col-sm-4">
+                                <label class="sr-only" for="input-email-login">Email address</label>
+                                <input type="email" class="form-control form-control-sm mr-1" id="input-email-login" placeholder="Email addresss">
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <label class="sr-only" for="input-password-login">Password</label>
+                                <input type="password" class="form-control form-control-sm mr-1" id="input-password-login" placeholder="Password">
+                            </div>
+                            <!-- remember me checkbox -->
+                            <div class="col-sm-auto">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="checkbox-remember">
+                                    <label class="form-check-label" for="checkbox-remember">Remember me</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <button type="submit" class="btn btn-primary ml-auto">Login</button>
+                            <button type="button" class="btn btn-danger ml-1" data-dismiss="modal">Cancel</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
