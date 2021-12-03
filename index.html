@@ -256,6 +256,7 @@
                 <!-- header -->
                 <div class="modal-header">
                     <h3 >Reserve a Table</h3>
+                    <button class="close" data-dismiss="modal">&times;</span>
                 </div>
                 <div class="modal-body">
                 <!-- body -->
@@ -292,8 +293,14 @@
                     <div class="row form-group">
                         <div class="col-3">Section</div>
                         <div class="col-9">
-                            <button name="checkbox-section" type="button" class="btn btn-success" >Non-Smoking</button>
-                            <button name="checkbox-section" type="button" class="btn btn-danger">Smoking</button>
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                <label class="btn btn-success active focus">
+                                    <input type="radio" checked>Non-Smoking
+                                </label>
+                                <label class="btn btn-danger ">
+                                    <input type="radio" >Smoking
+                                </label>
+                            </div>
                         </div>
                     </div>
         
