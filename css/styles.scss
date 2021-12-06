@@ -47,12 +47,43 @@ body{
      background-color: $background-dark;
 }
 
+.navbar-brand{
+    padding: 0 10px;
+}
+
+
+#check-label{
+    :hover{
+        font-weight: 500;
+    }
+}
 .tab-content {
     border-left: 1px solid $lt-gray;
     border-right: 1px solid $lt-gray;
     border-bottom: 1px solid $lt-gray;
     padding: 10px;
 }
+
+
+.check-box{
+    margin-right: 5px;
+    display: inline-block;
+}
+
+.collapsed .rotate-icon {
+    transform: rotate(180deg);
+}
+
+
+a{
+    .card-header {
+        cursor: pointer;
+        :hover{
+            background-color:  rgba(1,1,1,0.2);
+        }
+    }
+}
+
 
 .carousel {
     background:$background-dark;
@@ -68,9 +99,17 @@ body{
     }
 }
 
-#carouselButton {
-    right:0px;
+.carousel-control-next,.carousel-control-prev{
+    width: 10%;
+    background-color: rgba(0,0,0,0.1);
+
+}
+
+
+#carousel-pause-play{
     position: absolute;
-    bottom: 0px;
+    bottom: 5px;
+    right: 5px;
     z-index: 1;
+
 }

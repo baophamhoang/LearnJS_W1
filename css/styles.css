@@ -31,11 +31,29 @@ body {
 .navbar-dark {
   background-color: #512DA8; }
 
+.navbar-brand {
+  padding: 0 10px; }
+
+#check-label :hover {
+  font-weight: 500; }
+
 .tab-content {
   border-left: 1px solid #ddd;
   border-right: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
   padding: 10px; }
+
+.check-box {
+  margin-right: 5px;
+  display: inline-block; }
+
+.collapsed .rotate-icon {
+  transform: rotate(180deg); }
+
+a .card-header {
+  cursor: pointer; }
+  a .card-header :hover {
+    background-color: rgba(1, 1, 1, 0.2); }
 
 .carousel {
   background: #512DA8; }
@@ -47,8 +65,12 @@ body {
       left: 0;
       min-height: 300px; }
 
-#carouselButton {
-  right: 0px;
+.carousel-control-next, .carousel-control-prev {
+  width: 10%;
+  background-color: rgba(0, 0, 0, 0.1); }
+
+#carousel-pause-play {
   position: absolute;
-  bottom: 0px;
+  bottom: 5px;
+  right: 5px;
   z-index: 1; }
