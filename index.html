@@ -15,6 +15,7 @@
 <body>
     <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
         <div class="container">
+            <!-- nav bar -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -27,8 +28,10 @@
                     <li class="nav-item"> <a class="nav-link" href="#">Menu <span class="fa fa-list fa-lg"></span></a></li>
                     <li class="nav-item"> <a class="nav-link" href="./contactus.html">Contact <span class="fa fa-address-card fa-lg"></span></a></li>
                 </ul>
+
+                <!-- login button -->
                 <span class="navbar-text">
-                    <a data-toggle="modal" data-target="#loginModal">
+                    <a id="button-login">
                         <span class="fa fa-sign-in"></span> Login
                     </a>
                 </span>
@@ -57,7 +60,8 @@
                             data-placement="bottom" title="Call us at <br><strong>0905857882</strong>">Reserve Table</a>
                         </div> -->
                         <div class="col-sm-3">
-                            <a href="#modal-reverse-table" class="btn btn-sm btn-warning nav-link" data-toggle="modal" >Reverse Table</a>
+                            <!-- <a href="#modal-reverse-table" class="btn btn-sm btn-warning nav-link" data-toggle="modal" >Reverse Table</a> -->
+                            <button id="button-reverse-table" class="btn btn-sm btn-warning nav-link"  >Reverse Table
                         </div>
 
             </div>
@@ -250,6 +254,14 @@
                     $("#carousel-pause-play").children("span").addClass("fa-pause")
                 }
             })
+            // login button
+            $("#button-login").click(function(){
+                $("#loginModal").modal();
+            })
+            $("#button-reverse-table").click(function(){
+                $("#modal-reverse-table").modal();
+            })
+
         });
     </script>
 
@@ -297,7 +309,7 @@
     </div>
 
         <!-- Reserve a Table Modal -->
-    <div class="modal fade" role="dialog" id="modal-reverse-table">
+    <div class="modal fade show" role="dialog" id="modal-reverse-table" >
         <div class="modal-dialog" role="content">
             <div class="modal-content">
                 <!-- header -->
